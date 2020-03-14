@@ -1,0 +1,574 @@
+{
+  "errorDefinitions": [
+    {
+      "ID": 16904,
+      "Name": "ERR_NOT_AUTHORIZED_TO_USE_THE_MESSAGE",
+      "Description": "Not authorized to use the message"
+    },
+    {
+      "ID": 17149,
+      "Name": "ERR_TERMINAL_BEAM_UNKNOWN",
+      "Description": "Terminal beam unknown"
+    },
+    {
+      "ID": 17151,
+      "Name": "ERR_NO_EARTHSTATION_ROUTE_TO_DESTINATION",
+      "Description": "No earth station route to terminal"
+    },
+    {
+      "ID": 17408,
+      "Name": "ERR_MESSAGE_CONTENT_IS_INVALID",
+      "Description": "Invalid message content - general"
+    },
+    {
+      "ID": 17413,
+      "Name": "ERR_PRIORITY_INVALID",
+      "Description": "Invalid message priority"
+    },
+    {
+      "ID": 17414,
+      "Name": "ERR_NOT_AUTHORIZED_TO_USE_THE_PRIORITY",
+      "Description": "Not authorized to use this message priority"
+    },
+    {
+      "ID": 17415,
+      "Name": "ERR_INVALID_BEAM",
+      "Description": "Invalid beam number"
+    },
+    {
+      "ID": 17664,
+      "Name": "ERR_PROCESSING_ERROR",
+      "Description": "General processing error"
+    },
+    {
+      "ID": 17667,
+      "Name": "ERR_DUPLICATE_LOGIN",
+      "Description": "Duplicate login"
+    },
+    {
+      "ID": 17668,
+      "Name": "ERR_INVALID_USER_OR_PASSWORD",
+      "Description": "Invalid user name or password"
+    },
+    {
+      "ID": 21793,
+      "Name": "ERR_INVALID_BROADCAST_ID_NOT_YOUR_ID",
+      "Description": "Invalid broadcast ID or the ID belongs to another Mailbox"
+    },
+    {
+      "ID": 21794,
+      "Name": "ERR_RESTRICTED_MESSAGE",
+      "Description": "Sending of messages with this SIN and MIN pair is restricted."
+    },
+    {
+      "ID": 21795,
+      "Name": "ERR_REGULAR_MESSAGE_SIZE_QUEUE_FULL",
+      "Description": "Maximum number of queued regular sized messages for this MobileID has been reached."
+    },
+    {
+      "ID": 21796,
+      "Name": "ERR_LARGE_MESSAGE_SIZE_QUEUE_FULL",
+      "Description": "Maximum number of queued large messages for this MobileID has been reached."
+    },
+    {
+      "ID": 21797,
+      "Name": "ERR_LOW_POWER_MODE_MESSAGE_TOO_LONG",
+      "Description": "Low power mode terminal message is too long."
+    },
+    {
+      "ID": 17685,
+      "Name": "ERR_MESSAGE_CANNOT_BE_CANCELLED_BECAUSE_ALREADY_SENT",
+      "Description": "Message cannot be cancelled because it has already been sent to its destination."
+    },
+    {
+      "ID": 21809,
+      "Name": "ERR_NDN_MAX_RETRY_EXHAUSTED",
+      "Description": "Maximum retry or overflow of first packet of low-power message exhausted"
+    },
+    {
+      "ID": 21810,
+      "Name": "ERR_NDN_INVALID_MODEM_WI",
+      "Description": "Invalid modem wake-up interval"
+    },
+    {
+      "ID": 17686,
+      "Name": "ERR_MESSAGE_ACK_ERROR_CONNECTION_LOSS",
+      "Description": "Message not ACK-ed due to hub connection loss"
+    },
+    {
+      "ID": 21811,
+      "Name": "ERR_NDN_FAILED_TO_LOAD",
+      "Description": "Failed to load the message from database"
+    },
+    {
+      "ID": 21812,
+      "Name": "ERR_NDN_TIMEOUT_NO_CHANCE_TO_TRANSMIT",
+      "Description": "Message timeout  never had chance to be transmitted"
+    },
+    {
+      "ID": 21813,
+      "Name": "ERR_NDN_TIMEOUT_SOME_ATTEMPTS_TO_TRANSMIT",
+      "Description": "Message timeout  some attempts made but never received modems ACK, and later no chance to be transmitted"
+    },
+    {
+      "ID": 21814,
+      "Name": "ERR_NDN_TIMEOUT_SOME_ATTEMPTS_TO_TRANSMIT_ACKED",
+      "Description": "Message timeout  some successful attempts made (modems ACK received), but later no chance to be transmitted"
+    },
+    {
+      "ID": 21815,
+      "Name": "ERR_NDN_TERMINAL_RESET_NO_CHANCE_TO_TRANSMIT",
+      "Description": "Terminal was reset  never had chance to be transmitted"
+    },
+    {
+      "ID": 21816,
+      "Name": "ERR_NDN_TERMINAL_RESET_SOME_ATTEMPTS_TO_TRANSMIT",
+      "Description": "Terminal was reset  some attempts made but never received modems ACK"
+    },
+    {
+      "ID": 21819,
+      "Name": "ERR_INVALID_GATEWAY_ID",
+      "Description": "Message destination is not provisioned for this gateway."
+    },
+    {
+      "ID": 21817,
+      "Name": "ERR_UNCHANGED_HWM_DETECTED",
+      "Description": "Too many same high-water mark GET requests detected"
+    },
+    {
+      "ID": 21818,
+      "Name": "ERR_MTBP_SESSION_CLEARED",
+      "Description": "MTBP session cleared while waiting for an ACK"
+    },
+    {
+      "ID": 259,
+      "Name": "ERR_INVALID_VAR_ID",
+      "Description": "Invalid MPC ID"
+    },
+    {
+      "ID": 260,
+      "Name": "ERR_INVALID_MESSAGE_TYPE",
+      "Description": "Invalid Message Type; returned by the LES  or the  terminal"
+    },
+    {
+      "ID": 261,
+      "Name": "ERR_INVALID_DATA_LENGTH_OR_CHECKSUM",
+      "Description": "Invalid data length or checksum; returned by the LES  or the  terminal"
+    },
+    {
+      "ID": 262,
+      "Name": "ERR_INVALID_PASSWORD",
+      "Description": "Invalid Password; returned by the LES  or the  terminal"
+    },
+    {
+      "ID": 512,
+      "Name": "ERR_INVALID_TERMINAL_ID_GENERAL",
+      "Description": "Invalid MobileID"
+    },
+    {
+      "ID": 513,
+      "Name": "ERR_INVALID_TERMINAL_ID_NO_SUCH_TERMINAL",
+      "Description": "Unknown MobileID "
+    },
+    {
+      "ID": 0,
+      "Name": "NO_ERRORS",
+      "Description": ""
+    },
+    {
+      "ID": 1,
+      "Name": "ERR_BUFFER_TOO_SHORT",
+      "Description": "Message received from the LES is shorter than expected"
+    },
+    {
+      "ID": 2,
+      "Name": "ERR_INVALID_MESSAGE",
+      "Description": "This mailbox is not authorised to send this type of message"
+    },
+    {
+      "ID": 3,
+      "Name": "ERR_INVALID_MESSAGE_CONTENT",
+      "Description": "Message content is not valid."
+    },
+    {
+      "ID": 4,
+      "Name": "ERR_MT_SN_MISSING",
+      "Description": "Missing MobileID"
+    },
+    {
+      "ID": 5,
+      "Name": "ERR_FW_MESSAGE_MISSING",
+      "Description": "MessageContent field of your message is empty, or the whole message is missing."
+    },
+    {
+      "ID": 7,
+      "Name": "ERR_UNKNOWN_FW_MESSAGE_TYPE",
+      "Description": "Received an unknown message type from the LES"
+    },
+    {
+      "ID": 13,
+      "Name": "ERR_UNABLE_TO_OBTAIN_MESSAGE_ID",
+      "Description": "Internal error - unable to obtain unique message ID."
+    },
+    {
+      "ID": 14,
+      "Name": "ERR_INVALID_MESSAGE_ID",
+      "Description": "Unable to find a message with the specified ID."
+    },
+    {
+      "ID": 15,
+      "Name": "ERR_UNKNOWN_ERROR_CODE",
+      "Description": "Internal error - invalid error code value."
+    },
+    {
+      "ID": 16,
+      "Name": "ERR_CUSTOMER_DELAYED",
+      "Description": "API call frequency too high. See Documentation of polling restrictions"
+    },
+    {
+      "ID": 17,
+      "Name": "ERR_INVALID_INPUT_PARAMETER_TIMESTAMP_FORMAT",
+      "Description": "Invalid timestamp format. (yyyy-mm-dd hh:mm:ss)"
+    },
+    {
+      "ID": 19,
+      "Name": "ERR_DB_ERROR",
+      "Description": "Gateway database error"
+    },
+    {
+      "ID": 20,
+      "Name": "ERR_GATEWAY_NOT_READY",
+      "Description": "Gateway not ready, please try again later."
+    },
+    {
+      "ID": 23,
+      "Name": "ERR_INVALID_INPUT_DATA",
+      "Description": "One of API  parameters is empty or invalid."
+    },
+    {
+      "ID": 24,
+      "Name": "ERR_INVALID_ROLE",
+      "Description": "Authorisation Error"
+    },
+    {
+      "ID": 25,
+      "Name": "ERR_INVALID_ROLE_ID",
+      "Description": "Authorisation Error"
+    },
+    {
+      "ID": 26,
+      "Name": "ERR_INVALID_CUSTOMER",
+      "Description": "Invalid Mailbox or Mailbox related data."
+    },
+    {
+      "ID": 27,
+      "Name": "ERR_RECORD_ALREADY_EXISTS",
+      "Description": "A database record already exists."
+    },
+    {
+      "ID": 28,
+      "Name": "ERR_RECORD_DOES_NOT_EXIST",
+      "Description": "Requested record does not exist in the database."
+    },
+    {
+      "ID": 30,
+      "Name": "ERR_CUSTOMER_DOES_NOT_EXIST",
+      "Description": "The specified Mailbox does not exist in the database."
+    },
+    {
+      "ID": 31,
+      "Name": "ERR_TERMINAL_DOES_NOT_EXIST",
+      "Description": "The specified MobileID does not exist in the database."
+    },
+    {
+      "ID": 35,
+      "Name": "ERR_INVALID_SUBSCRIPTION_INFO",
+      "Description": "Invalid subscription settings sent."
+    },
+    {
+      "ID": 40,
+      "Name": "ERR_INVALID_CUSTOMER_GW_VAR_ID",
+      "Description": "MobileID is not provisioned correctly on the Gateway"
+    },
+    {
+      "ID": 41,
+      "Name": "ERR_GW_VAR_ID_NOT_ASSIGNED",
+      "Description": "MobileID not assigned to the Mailbox"
+    },
+    {
+      "ID": 42,
+      "Name": "ERR_FW_UNACKED_PACKET_NOT_FOUND",
+      "Description": "GW server error - unacked MPC packet not found."
+    },
+    {
+      "ID": 43,
+      "Name": "ERR_FW_UNABLE_TO_SEND_MESSAGE",
+      "Description": "Gateway unable to send a forward message."
+    },
+    {
+      "ID": 44,
+      "Name": "ERR_WS_FAILED_TO_REINITIALIZE_PROPERLY",
+      "Description": "API intialisation Failure"
+    },
+    {
+      "ID": 48,
+      "Name": "ERR_INVALID_DESTINATION_ID",
+      "Description": "Invalid MobileID"
+    },
+    {
+      "ID": 49,
+      "Name": "ERR_MESSAGE_CLOSED_BECAUSE_OF_TERMINAL_RESET",
+      "Description": "Message closed because a terminal registration message was received."
+    },
+    {
+      "ID": 50,
+      "Name": "ERR_INVALID_MT_SN_LENGTH",
+      "Description": "Invalid MobileID"
+    },
+    {
+      "ID": 90,
+      "Name": "ERR_TOO_MANY_MESSAGES_REQUESTED",
+      "Description": "Too many forward messages requested."
+    },
+    {
+      "ID": 98,
+      "Name": "ERR_MAX_TERMINAL_COUNT_PER_CALL_EXCEEDED",
+      "Description": "Maximum destination MobileID count in this call exceeded."
+    },
+    {
+      "ID": 128,
+      "Name": "ERR_INTERNAL_EXCEPTION",
+      "Description": "Internal Gateway exception."
+    },
+    {
+      "ID": 256,
+      "Name": "ERR_INVALID_MESSAGE_FORMAT",
+      "Description": "Invalid Message format; returned by the LES  or the  terminal"
+    },
+    {
+      "ID": 257,
+      "Name": "ERR_INVALID_VERSION",
+      "Description": "Unsupported Version; returned by the LES  or the  terminal"
+    },
+    {
+      "ID": 258,
+      "Name": "ERR_INVALID_PPC_ID",
+      "Description": "Invalid MPC ID"
+    },
+    {
+      "ID": 514,
+      "Name": "ERR_INVALID_TERMINAL_ID_NOT_YOUR_TERMINAL",
+      "Description": "MobileID does not belong to the Mailbox "
+    },
+    {
+      "ID": 515,
+      "Name": "ERR_TERMINAL_BEING_USED_BY_PPC",
+      "Description": "Error code returned by a PPC or a terminal."
+    },
+    {
+      "ID": 516,
+      "Name": "ERR_TERMINAL_NOT_REGISTERED",
+      "Description": "Unregistered MobileID"
+    },
+    {
+      "ID": 104,
+      "Name": "ERR_UNAUTHORIZED_FOR_THIS_OPERATION",
+      "Description": "The user is not authorized for this gateway operation."
+    },
+    {
+      "ID": 17152,
+      "Name": "ERR_INVALID_RESEND_COUNT",
+      "Description": "Invalid num of times to send a message"
+    },
+    {
+      "ID": 17153,
+      "Name": "ERR_INVALID_REPEAT_INTERVAL",
+      "Description": "Invalid interval of repeating a message"
+    },
+    {
+      "ID": 17670,
+      "Name": "ERR_VAR_TRAFFIC_OFF_BY_OP",
+      "Description": "Forward traffic from MPC not allowed by operator"
+    },
+    {
+      "ID": 17674,
+      "Name": "ERR_VAR_LOGIN_IN_PROGRESS",
+      "Description": "MPC Login in progress"
+    },
+    {
+      "ID": 17675,
+      "Name": "ERR_FIRST_VAR_MESSAGE_NOT_LOGIN",
+      "Description": "The first message received from MPC is not the MPC login message"
+    },
+    {
+      "ID": 17676,
+      "Name": "ERR_VAR_DISCONNECTED_BY_OP",
+      "Description": "The connection with the MPC is disconnected"
+    },
+    {
+      "ID": 17677,
+      "Name": "ERR_TOO_MANY_BAD_MESSAGES_RECEIVED",
+      "Description": "Too many bad messages received from MPC"
+    },
+    {
+      "ID": 17678,
+      "Name": "ERR_MESSAGE_TOO_LONG",
+      "Description": "The message from MPC is too long"
+    },
+    {
+      "ID": 17681,
+      "Name": "ERR_MAX_QUEUED_MESSAGES_FOR_MOBILE_REACHED",
+      "Description": "The maximum number of queued messages for a specified mobile was reached"
+    },
+    {
+      "ID": 17682,
+      "Name": "ERR_MAX_ACTIVE_MSGS_REACHED",
+      "Description": "The maximum number of active messages reached"
+    },
+    {
+      "ID": 17683,
+      "Name": "ERR_CANCEL_MSG_DOES_NOT_EXIST",
+      "Description": "Unable to cancel a message, the message does not exist"
+    },
+    {
+      "ID": 17684,
+      "Name": "ERR_MAX_OUTSTANDING_MSG_LEN_OF_VC_REACHED",
+      "Description": "The maximum outstanding message length of virtual carrier reached"
+    },
+    {
+      "ID": 12308,
+      "Name": "ERR_NDN_INVALID_BEAM",
+      "Description": "Non delivery notification reason: invalid beam number"
+    },
+    {
+      "ID": 12309,
+      "Name": "ERR_NDN_TIMED_OUT",
+      "Description": "Non delivery notification reason: message time out"
+    },
+    {
+      "ID": 110,
+      "Name": "ERR_INVALID_TERMINAL_CUSTOMER_COMBINATION",
+      "Description": "Customer/Terminal update access denied because they are under different operator."
+    },
+    {
+      "ID": 12307,
+      "Name": "ERR_UNSUPPORTED_MESSAGE",
+      "Description": "Message type not supported by the destination."
+    },
+    {
+      "ID": 21785,
+      "Name": "ERR_AUTHENTICATION_ERROR",
+      "Description": "Gateway service authentication error; Invalid Access ID or Password."
+    },
+    {
+      "ID": 21786,
+      "Name": "ERR_INVALID_WS_PARAMETER",
+      "Description": "One of the API operation parameters has an invalid value."
+    },
+    {
+      "ID": 21787,
+      "Name": "ERR_NDN_FAILED_CURRENT_BEAM_UPDATE",
+      "Description": "Non delivery notification reason: failed to update the current beam number."
+    },
+    {
+      "ID": 21788,
+      "Name": "ERR_NDN_TOO_MANY_MESSAGES",
+      "Description": "Non delivery notification reason: too many messages"
+    },
+    {
+      "ID": 21789,
+      "Name": "ERR_NDN_INITIAL_SYSTEM_STATE",
+      "Description": "Non delivery notification reason: initial system state"
+    },
+    {
+      "ID": 21790,
+      "Name": "ERR_NDN_UNKNOWN_ERROR",
+      "Description": "Non delivery notification reason: unknown"
+    },
+    {
+      "ID": 21791,
+      "Name": "ERR_NDN_INVALID_PRIORITY",
+      "Description": "Non delivery notification reason: invalid priority"
+    },
+    {
+      "ID": 113,
+      "Name": "ERR_WEB_SERVICE_OPERATION_DEPRECATED",
+      "Description": "This API operation is not available any more."
+    },
+    {
+      "ID": 114,
+      "Name": "ERR_DND_UNABLE_TO_SCHEDULE",
+      "Description": "Gateway was not able to calculate delivery time for this low power terminal message."
+    },
+    {
+      "ID": 115,
+      "Name": "ERR_UNABLE_TO_CANCEL_THE_MESSAGE",
+      "Description": "The message you wish to cancel cannot be cancelled any more."
+    },
+    {
+      "ID": 116,
+      "Name": "ERR_INVALID_MESSAGE_XML_CONTENT",
+      "Description": "Gateway is unable to parse the message content."
+    },
+    {
+      "ID": 12310,
+      "Name": "ERR_INVALID_BROADCAST_ID_NO_SUCH_ID",
+      "Description": "Invalid broadcast ID, no such ID in the system."
+    },
+    {
+      "ID": 12311,
+      "Name": "ERR_TERMINAL_IS_DISABLED",
+      "Description": "MobileID is disabled"
+    },
+    {
+      "ID": 12312,
+      "Name": "ERR_BROADCAST_ID_IS_DISABLED",
+      "Description": "Broadcast ID is disabled."
+    },
+    {
+      "ID": 12313,
+      "Name": "ERR_MT_ERROR_UNABLE_TO_ALLOCATE_MESSAGE_BUFFER",
+      "Description": "Mobile generated error: unable to allocate message buffer."
+    },
+    {
+      "ID": 12314,
+      "Name": "ERR_MT_ERROR_UNKNOWN_MESSAGE_TYPE",
+      "Description": "Mobile generated error: unknown message type"
+    },
+    {
+      "ID": 21792,
+      "Name": "ERR_NDN_TERMINAL_WAS_RESET",
+      "Description": "Non delivery notification reason: terminal was reset"
+    },
+    {
+      "ID": 18,
+      "Name": "ERR_SERVER_STOPPED",
+      "Description": "Gateway server Error"
+    },
+    {
+      "ID": 17154,
+      "Name": "ERR_INVALID_VAIN",
+      "Description": "Invalid VAIN"
+    },
+    {
+      "ID": 16896,
+      "Name": "ERR_INVALID_DESTINATION_ID_GENERAL",
+      "Description": "Invalid MobileID - general"
+    },
+    {
+      "ID": 16897,
+      "Name": "ERR_INVALID_DESTINATION_ID_NO_SUCH_DESTINATION",
+      "Description": "Invalid MobileID - Mobile ID does not exist or is not activated"
+    },
+    {
+      "ID": 16898,
+      "Name": "ERR_INVALID_DESTINATION_ID_NOT_YOUR_DESTINATION",
+      "Description": "Invalid MobileID - MobileID is not assigned to this mailbox"
+    },
+    {
+      "ID": 16900,
+      "Name": "ERR_DESTINATION_NOT_REGISTERED",
+      "Description": "MobileID not registered"
+    }
+  ]
+}
